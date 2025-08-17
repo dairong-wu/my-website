@@ -636,6 +636,7 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#side-projects">Open Source</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#languages">Languages</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -844,7 +845,104 @@
             </div>
         </div>
     </section>
-
+	<section id="side-projects">
+		<div class="container">
+			<h2 class="section-title">Open Source Projects</h2>
+			<div class="cards-grid">
+				<div class="card stagger-item">
+					<div class="card-title">
+						<a href="https://github.com/dairong-wu/auto-centering" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+							Auto-Centering Tool for BSIM4 Models
+							<svg style="display: inline-block; width: 16px; height: 16px; margin-left: 4px; vertical-align: middle;" fill="currentColor" viewBox="0 0 20 20">
+								<path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/>
+								<path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/>
+							</svg>
+						</a>
+					</div>
+					<div class="card-content">
+						A Python-based parameter optimization tool designed for SkyWater 130nm PDK BSIM4 models. 
+						Automatically centers transistor parameters (Vth0, u0, vsat) using constant current method 
+						for threshold voltage extraction. Features both GUI and CLI modes with detailed reporting 
+						and visualization capabilities.
+					</div>
+					<div class="card-meta">Python, NumPy, Matplotlib, Tkinter, ngspice</div>
+				</div>
+	
+				<div class="card stagger-item">
+					<div class="card-title">
+						<a href="https://github.com/dairong-wu/openspice-playground" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+							OpenSPICE Playground
+							<svg style="display: inline-block; width: 16px; height: 16px; margin-left: 4px; vertical-align: middle;" fill="currentColor" viewBox="0 0 20 20">
+								<path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/>
+								<path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/>
+							</svg>
+						</a>
+					</div>
+					<div class="card-content">
+						A web-based circuit simulator powered by ngspice and Streamlit. Enables circuit design, 
+						simulation, and analysis directly in the browser with an intuitive interface. 
+						Features include interactive netlist editor, pre-built examples (RC filters, CMOS inverters, BJT amplifiers), 
+						parametric circuit generation, and real-time waveform visualization with export capabilities.
+						Built with comprehensive security features including command filtering and sandboxed execution.
+					</div>
+					<div class="card-meta">Python, Streamlit, ngspice, Matplotlib, Pandas</div>
+				</div>
+	
+				<div class="card stagger-item">
+					<div class="card-title">
+						<a href="https://github.com/dairong-wu/pcell-generator-library" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+							PCell Generator Library for KLayout
+							<svg style="display: inline-block; width: 16px; height: 16px; margin-left: 4px; vertical-align: middle;" fill="currentColor" viewBox="0 0 20 20">
+								<path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/>
+								<path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/>
+							</svg>
+						</a>
+					</div>
+					<div class="card-content">
+						A comprehensive parameterized cell (PCell) library for KLayout supporting IC design components 
+						including MOSFETs (multi-finger, dummy gates), resistors (serpentine layout), 
+						capacitors (MIM/MOS with interdigitated structures), and inductors (rectangular spiral). 
+						Compatible with SkyWater 130nm and GlobalFoundries 180nm processes. 
+						Features dynamic parameter adjustment in KLayout GUI and automated GDS generation.
+					</div>
+					<div class="card-meta">Python, KLayout, GDS, SkyWater PDK, GF180 PDK</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Additional CSS to add to the existing style section -->
+	<style>
+		/* Enhanced card links with external icon */
+		.card-title a {
+			transition: color 0.3s ease;
+		}
+		
+		.card-title a:hover {
+			color: var(--primary-color) !important;
+		}
+		
+		.card-title a svg {
+			opacity: 0.5;
+			transition: opacity 0.3s ease, transform 0.3s ease;
+		}
+		
+		.card-title a:hover svg {
+			opacity: 1;
+			transform: translate(2px, -2px);
+		}
+		
+		/* GitHub link style in cards */
+		.card-meta {
+			border-top: 1px solid var(--border-light);
+			padding-top: 12px;
+			margin-top: 16px;
+			font-family: 'JetBrains Mono', monospace;
+			font-size: 0.75rem;
+			color: var(--primary-color);
+			opacity: 0.8;
+		}
+	</style>
     <section id="certifications">
         <div class="container">
             <h2 class="section-title">Professional Certifications</h2>
